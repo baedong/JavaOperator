@@ -4,6 +4,7 @@ import condition.ArithmeticCalc;
 import condition.ClacAvg;
 import condition.ManOrWoman;
 import condition.SwitchAvg;
+import loop.EvenOddSum;
 
 public class OperatorController {
 	public static void main(String[] args) {
@@ -21,6 +22,10 @@ public class OperatorController {
 		
 		// 2015.07.10 성 판별기 (switch-case)
 		ManOrWoman manOrWoman = new ManOrWoman();
-		manOrWoman.ssn();
+		//manOrWoman.ssn();
+		
+		// 2015.07.13 짝수 홀수 판별기 (for , if)
+		EvenOddSum evenOddSum = new EvenOddSum();
+		evenOddSum.cals();
 	}
 }
