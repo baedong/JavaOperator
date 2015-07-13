@@ -12,16 +12,12 @@ public class InputMax {
 		System.out.println("3개의 점수를 입력하세요");
 		Scanner scanner = new Scanner(System.in);
 		int[] arr = new int[3];
-		int score;
+		int score=0;
 		for (int i = 0; i < arr.length; i++) {
 			arr[i]=scanner.nextInt();
-		}
-		if (arr[0]>arr[1] && arr[0]>arr[2]) {
-			score=arr[0];
-		} else if(arr[1]>arr[0] && arr[1]>arr[2]) {
-			score=arr[1];
-		} else {
-			score=arr[2];
+			if (arr[i]>score) {
+				score = arr[i];
+			}
 		}
 		System.out.println("최고 점수는 : "+score);
 	}
